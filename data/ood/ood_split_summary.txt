@@ -1,0 +1,8 @@
+Country-held-out splits derived from fixed Week 1 splits.
+Train countries: Japan, India, Czech, China_MotorBike
+Held-out eval countries: Norway, United_States
+ood train: 231
+ood val: 10
+ood source-country test (optional): 0
+held-out eval: 120
+Checkpoint selection uses ood val only — never heldout_eval or test.
