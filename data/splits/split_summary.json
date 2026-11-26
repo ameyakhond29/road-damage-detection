@@ -1,0 +1,138 @@
+{
+  "generated_at": "2026-11-26T23:07:30.946836+00:00",
+  "dataset": "official_rdd2022",
+  "dataset_version": "RDD2022_released_through_CRDDC2022",
+  "split_id": "grouped_70_15_15_seed6845",
+  "seed": 6845,
+  "block_size": 50,
+  "ratios": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "n_candidates_per_country": 200,
+  "near_duplicate_max_hamming": 0,
+  "near_duplicate_purge_hamming": 4,
+  "n_purged_near_duplicates": 448,
+  "purged": {
+    "by_split": {
+      "val": 216,
+      "test": 232
+    },
+    "negatives": 235,
+    "objects": 553
+  },
+  "selection": {
+    "China_MotorBike": {
+      "n_components": 17,
+      "selection_score": 0.362228
+    },
+    "Czech": {
+      "n_components": 53,
+      "selection_score": 0.193173
+    },
+    "India": {
+      "n_components": 155,
+      "selection_score": 0.103633
+    },
+    "Japan": {
+      "n_components": 199,
+      "selection_score": 0.071563
+    },
+    "Norway": {
+      "n_components": 151,
+      "selection_score": 0.108596
+    },
+    "United_States": {
+      "n_components": 95,
+      "selection_score": 0.124987
+    }
+  },
+  "splits": {
+    "train": {
+      "n_images": 25355,
+      "n_objects": 36545,
+      "n_negatives": 9969,
+      "class_counts": {
+        "D00": 17328,
+        "D10": 7448,
+        "D20": 7222,
+        "D40": 4547
+      },
+      "countries": {
+        "China_MotorBike": 1427,
+        "Czech": 2000,
+        "India": 5406,
+        "Japan": 7356,
+        "Norway": 5761,
+        "United_States": 3405
+      }
+    },
+    "val": {
+      "n_images": 5163,
+      "n_objects": 7540,
+      "n_negatives": 1985,
+      "class_counts": {
+        "D00": 3493,
+        "D10": 1541,
+        "D20": 1563,
+        "D40": 943
+      },
+      "countries": {
+        "China_MotorBike": 247,
+        "Czech": 408,
+        "India": 1133,
+        "Japan": 1590,
+        "Norway": 1089,
+        "United_States": 696
+      }
+    },
+    "test": {
+      "n_images": 5018,
+      "n_objects": 7300,
+      "n_negatives": 1947,
+      "class_counts": {
+        "D00": 3414,
+        "D10": 1506,
+        "D20": 1467,
+        "D40": 913
+      },
+      "countries": {
+        "China_MotorBike": 198,
+        "Czech": 376,
+        "India": 1126,
+        "Japan": 1531,
+        "Norway": 1089,
+        "United_States": 698
+      }
+    }
+  },
+  "total": {
+    "n_images": 35536,
+    "n_objects": 51385,
+    "n_negatives": 13901,
+    "class_counts": {
+      "D00": 24235,
+      "D10": 10495,
+      "D20": 10252,
+      "D40": 6403
+    },
+    "countries": {
+      "China_MotorBike": 1872,
+      "Czech": 2784,
+      "India": 7665,
+      "Japan": 10477,
+      "Norway": 7939,
+      "United_States": 4799
+    }
+  },
+  "n_converted_images": 35984,
+  "leakage_passed": true,
+  "csv_sha256": {
+    "train": "00361dce5cc9daecfc351a8e207437eaeff056eb961466ff22b317a768b483cf",
+    "val": "948f55c977dd7c522a39de455997aee001ccd46930ebcd0b0318adeee1db7c69",
+    "test": "102823c5c22f3d4da8c4c922add999c48b2d568bb65cdc8840e800540f0a4d46"
+  },
+  "legacy_fixture_backup": [],
+  "official_test_images_used": false
+}
