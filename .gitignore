@@ -1,0 +1,49 @@
+# Dataset (do not upload to GitHub) — official RDD2022 raw/processed data and archives
+data/raw/
+data/processed/
+data/RDD2022/
+data/fixture/**
+!data/fixture/.gitkeep
+# Official-data outputs (large; regenerate with scripts/run_official_dataset_pipeline.sh)
+results/official_rdd2022/
+results/fixture_runs/
+checkpoints/
+
+# Split CSVs may be regenerated; keep tracked by default but ignore large copies
+*.zip
+*.tar
+*.tar.gz
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Jupyter / IDE
+.ipynb_checkpoints/
+.idea/
+.vscode/
+*.swp
+
+# Training artifacts
+runs/
+weights/
+*.pt
+results/smoke_test/**
+!results/smoke_test/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.key
+credentials.json

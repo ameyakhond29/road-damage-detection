@@ -1,0 +1,24 @@
+# DATA-255 Road Damage Detection — pin ranges suitable for Colab/Kaggle T4
+# Install: pip install -r requirements.txt
+
+# Core data / viz
+numpy>=1.23.0,<2.0.0
+pandas>=1.5.0
+Pillow>=9.0.0
+opencv-python-headless>=4.7.0
+matplotlib>=3.6.0
+PyYAML>=6.0
+tqdm>=4.64.0
+lxml>=4.9.0
+seaborn>=0.12.0
+scikit-learn>=1.2.0
+
+# Duplicate detection (Week 1 splits)
+ImageHash>=4.3.1
+
+# Deep learning / YOLO (RTX 4090, Colab T4, Kaggle T4)
+# Install a CUDA build of torch matching your platform if needed:
+#   https://pytorch.org/get-started/locally/
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.0.0,<9.0.0
