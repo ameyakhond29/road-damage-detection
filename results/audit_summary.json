@@ -1,0 +1,34 @@
+{
+  "countries": [
+    "China_Drone",
+    "China_MotorBike",
+    "Czech",
+    "India",
+    "Japan",
+    "Norway",
+    "United_States"
+  ],
+  "total_images": 421,
+  "total_xmls": 403,
+  "missing_images": 7,
+  "missing_annotations": 25,
+  "corrupt_images": 0,
+  "images_with_no_damage": 121,
+  "images_with_empty_or_missing_ann": 146,
+  "class_counts": {
+    "D00": 108,
+    "D10": 123,
+    "D20": 110,
+    "D40": 102
+  },
+  "unsupported_counts": {
+    "D50": 104,
+    "Repair": 84
+  },
+  "paths": {
+    "dataset_statistics": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/dataset_statistics.csv",
+    "class_distribution": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/class_distribution.csv",
+    "box_statistics": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/box_statistics.csv",
+    "unsupported_labels": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/unsupported_labels.csv"
+  }
+}

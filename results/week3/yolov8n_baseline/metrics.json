@@ -1,0 +1,38 @@
+{
+  "model": "yolov8n.pt",
+  "model_family": "YOLOv8n",
+  "imgsz": 640,
+  "batch": 4,
+  "epochs": 3,
+  "lr0": 0.01,
+  "optimizer": "auto (Ultralytics)",
+  "patience": 20,
+  "seed": 6845,
+  "amp": false,
+  "device": "mps",
+  "gpu_name": "Apple MPS",
+  "data": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/configs/rdd2022.yaml",
+  "software": {
+    "python": "3.11.1",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "torch": "2.14.1",
+    "cuda_available": false,
+    "ultralytics": "8.4.189"
+  },
+  "started_at": "2026-11-05T04:37:15.395056+00:00",
+  "smoke": true,
+  "checkpoint_selection": "best validation fitness / mAP50 (never test)",
+  "test_used_during_training": false,
+  "status": "completed",
+  "metrics": {
+    "metrics/precision(B)": 0.00014334862385321102,
+    "metrics/recall(B)": 0.022727272727272728,
+    "metrics/mAP50(B)": 8.731617647058824e-05,
+    "metrics/mAP50-95(B)": 2.6194852941176473e-05,
+    "fitness": 2.6194852941176473e-05
+  },
+  "training_time_sec": 66.1,
+  "best_checkpoint": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week3/yolov8n_baseline/train/weights/best.pt",
+  "finished_at": "2026-11-05T04:38:26.654574+00:00",
+  "run_dir": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week3/yolov8n_baseline/train"
+}

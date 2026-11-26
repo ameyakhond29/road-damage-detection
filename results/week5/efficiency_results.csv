@@ -1,0 +1,6 @@
+experiment,model_variant,source,status,input_resolution,parameter_count,gflops,peak_gpu_memory_mb,inference_latency_ms_mean,inference_latency_ms_std,throughput_img_s,device,gpu,seed_preferred
+yolo11n_640,YOLO11n baseline,/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week5/yolo11n_640/seed_0/train/weights/best.pt,checkpoint,640,2605612,6.5711744,Pending,83.335,10.493,12.0,cpu,cpu,0
+yolo11n_p2_640,YOLO11n + P2 head,/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week5/yolo11n_p2_640/seed_0/train/weights/best.pt,checkpoint,640,2667216,10.4575744,Pending,104.674,10.775,9.553,cpu,cpu,0
+yolo11n_attention_640,YOLO11n + neck attention (C2PSA@P3),/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week5/yolo11n_attention_640/seed_0/train/weights/best.pt,checkpoint,640,2621964,10.7216512,Pending,129.277,19.801,7.735,cpu,cpu,0
+yolo11n_800,YOLO11n @ 800px,/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week5/yolo11n_800/seed_0/train/weights/best.pt,checkpoint,800,2605612,6.5711744,Pending,109.624,18.738,9.122,cpu,cpu,0
+combined_800,Combined P2+attention@800,/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week5/combined_800/seed_0/train/weights/best.pt,checkpoint,800,2683568,14.6080512,Pending,293.876,28.303,3.403,cpu,cpu,0

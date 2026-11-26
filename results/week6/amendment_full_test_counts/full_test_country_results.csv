@@ -1,0 +1,2 @@
+split_label,split,country,status,n_images,n_objects,box_recall_iou50,map50,map50_95,note,country_held_out_protocol,ap_proxy_D00,n_gt_D00,ap_proxy_D10,n_gt_D10,ap_proxy_D20,n_gt_D20,ap_proxy_D40,n_gt_D40
+Test,test,United_States,ok,50,55,0.0,Pending,Pending,"Main test split contains only this country (grouped 70/15/15). This is incidental composition, NOT a designed country-held-out OOD protocol. No new split was created.",False,0.0,16,0.0,13,0.0,17,0.0,9

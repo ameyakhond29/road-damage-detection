@@ -1,0 +1,33 @@
+{
+  "week": 6,
+  "protocol_path": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/configs/final_evaluation.yaml",
+  "protocol_id": "week6_final_v1",
+  "started_finish": "2026-11-06T01:13:46.597146+00:00",
+  "device": "mps",
+  "gpu": "Apple MPS",
+  "software": {
+    "python": "3.11.1",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "torch": "2.14.1",
+    "cuda_available": false,
+    "ultralytics": "8.4.189"
+  },
+  "confidence_threshold": 0.25,
+  "iou_threshold": 0.7,
+  "split_hashes": {
+    "train": "3b76a2dc76c7d169",
+    "val": "7cbd768db64f4036",
+    "test": "3fd321b755c91c23"
+  },
+  "test_evaluation_completed": true,
+  "test_used_for_selection": false,
+  "force_rerun": false,
+  "smoke": true,
+  "outputs": {
+    "final_test_results.csv": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week6/final_test_results.csv",
+    "final_test_results.json": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week6/final_test_results.json",
+    "final_predictions.csv": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week6/final_predictions.csv",
+    "country_results.csv": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week6/country_results.csv",
+    "confidence_lock": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week6/CONFIDENCE_THRESHOLD_LOCKED.json"
+  }
+}

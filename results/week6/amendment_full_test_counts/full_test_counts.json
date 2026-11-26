@@ -1,0 +1,36 @@
+{
+  "amendment_id": "week6_full_test_counts_v1",
+  "reason": "Week 6 final test run was launched with --smoke. FP/FN counts and error analysis covered a subset (12 images; country rows capped at 8 per country). This re-reads the full test split for counts only.",
+  "model_id": "final_selected",
+  "checkpoint": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week5/yolo11n_640/seed_0/train/weights/best.pt",
+  "confidence_threshold_operating": 0.25,
+  "confidence_source": "results/week6/CONFIDENCE_THRESHOLD_LOCKED.json",
+  "iou_nms": 0.7,
+  "iou_match": 0.5,
+  "imgsz": 640,
+  "device": "mps",
+  "model_changed": false,
+  "thresholds_changed": false,
+  "selection_changed": false,
+  "retrained": false,
+  "original_smoke_counts": {
+    "n_detections": "73",
+    "false_positive_count": "72",
+    "false_negative_count": "11",
+    "true_positive_count": "0",
+    "localization_poor_count": "1",
+    "fn_small_count": "9"
+  },
+  "full_test_counts": {
+    "scope": "full_test_split",
+    "n_test_images": 50,
+    "n_detections": 232,
+    "false_positive_count": 219,
+    "false_negative_count": 42,
+    "true_positive_count": 0,
+    "localization_poor_count": 13,
+    "fn_small_count": 35,
+    "n_gt_objects": 55
+  },
+  "generated_at": "2026-11-26T03:23:58.729168+00:00"
+}

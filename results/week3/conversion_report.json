@@ -1,0 +1,26 @@
+{
+  "n_converted": 361,
+  "n_negatives": 120,
+  "n_skipped_countries": 1,
+  "n_missing_xml": 20,
+  "n_orphan_xml": 6,
+  "excluded_countries": [
+    "China_Drone"
+  ],
+  "removed_unsupported": {
+    "Repair": 75,
+    "D50": 94
+  },
+  "removed_unsupported_total": 169,
+  "issues": {
+    "malformed_xml": 0,
+    "missing_images": 6,
+    "invalid_boxes": 0,
+    "unknown_classes": 169,
+    "duplicate_annotations": 0,
+    "images_without_xml": 20
+  },
+  "manifest_path": "data/processed/RDD2022_yolo/manifest.csv",
+  "issues_path": "data/processed/RDD2022_yolo/conversion_issues.csv",
+  "processed_dir": "data/processed/RDD2022_yolo"
+}

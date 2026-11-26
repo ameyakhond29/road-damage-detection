@@ -1,0 +1,10 @@
+{
+  "completed_at": "2026-11-06T01:13:46.587410+00:00",
+  "models_evaluated": [
+    "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week3/yolov8n_baseline/train/weights/best.pt",
+    "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week4/yolo11n_baseline/train/weights/best.pt",
+    "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week5/yolo11n_640/seed_0/train/weights/best.pt"
+  ],
+  "confidence_threshold": 0.25,
+  "note": "One-shot test evaluation recorded. Do not retune."
+}

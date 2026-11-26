@@ -1,0 +1,53 @@
+{
+  "model": "yolo11n.pt",
+  "model_family": "YOLO11n",
+  "imgsz": 640,
+  "batch": 4,
+  "epochs": 3,
+  "lr0": 0.01,
+  "optimizer": "auto (Ultralytics)",
+  "patience": 20,
+  "seed": 6845,
+  "amp": false,
+  "device": "mps",
+  "gpu_name": "Apple MPS",
+  "data": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/configs/rdd2022.yaml",
+  "split_files": {
+    "train": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/data/splits/train.csv",
+    "val": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/data/splits/val.csv",
+    "test": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/data/splits/test.csv"
+  },
+  "software": {
+    "python": "3.11.1",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "torch": "2.14.1",
+    "cuda_available": false,
+    "ultralytics": "8.4.189"
+  },
+  "started_at": "2026-11-05T18:46:27.381337+00:00",
+  "smoke": true,
+  "checkpoint_selection": "best validation fitness / mAP50 (never test)",
+  "test_used_during_training": false,
+  "n_parameters": 2624080,
+  "peak_gpu_memory_mb": "Pending",
+  "latency": {
+    "latency_ms_mean": 27.551,
+    "latency_ms_std": 3.661,
+    "throughput_img_s": 36.296,
+    "n_iters": 50,
+    "warmup": 10
+  },
+  "status": "completed",
+  "metrics": {
+    "metrics/precision(B)": 0.0,
+    "metrics/recall(B)": 0.0,
+    "metrics/mAP50(B)": 0.0,
+    "metrics/mAP50-95(B)": 0.0,
+    "fitness": 0.0
+  },
+  "training_time_sec": 83.71,
+  "best_checkpoint": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week4/yolo11n_baseline/train/weights/best.pt",
+  "finished_at": "2026-11-05T18:47:58.199922+00:00",
+  "run_dir": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week4/yolo11n_baseline/train",
+  "checkpoint_size_mb": 5.249
+}

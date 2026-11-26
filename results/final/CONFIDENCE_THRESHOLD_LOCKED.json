@@ -1,0 +1,59 @@
+{
+  "selected_conf": 0.25,
+  "criterion": "max_f1_then_precision",
+  "split": "val",
+  "split_label": "Validation",
+  "test_used": false,
+  "sweep_rows": [
+    {
+      "split_label": "Validation",
+      "conf": 0.05,
+      "map50": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "split_label": "Validation",
+      "conf": 0.1,
+      "map50": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "split_label": "Validation",
+      "conf": 0.25,
+      "map50": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "split_label": "Validation",
+      "conf": 0.4,
+      "map50": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "split_label": "Validation",
+      "conf": 0.5,
+      "map50": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "split_label": "Validation",
+      "conf": 0.65,
+      "map50": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  ],
+  "locked_at": "2026-11-06T01:13:21.596331+00:00",
+  "checkpoint": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week5/yolo11n_640/seed_0/train/weights/best.pt"
+}

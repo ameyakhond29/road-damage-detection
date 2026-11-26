@@ -1,0 +1,16 @@
+{
+  "timestamp_utc": "2026-11-06T01:26:31.682419+00:00",
+  "python_version": "3.11.1",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "executable": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/.venv/bin/python3",
+  "rdd2022_yaml": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/configs/rdd2022.yaml",
+  "numpy_version": "1.26.4",
+  "pandas_version": "3.0.6",
+  "opencv_version": "4.11.0",
+  "torch_version": "2.14.1",
+  "cuda_available": false,
+  "cuda_version": null,
+  "gpu_name": "Apple MPS",
+  "torchvision_version": "0.29.1",
+  "ultralytics_version": "8.4.189"
+}

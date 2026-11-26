@@ -1,0 +1,35 @@
+{
+  "tables": [
+    "tables/final/ablation_comparison.csv",
+    "tables/final/baseline_comparison.csv",
+    "tables/final/country_level_results.csv",
+    "tables/final/efficiency_benchmark.csv",
+    "tables/final/final_comparison_table.csv",
+    "tables/final/final_test_results.csv",
+    "tables/final/per_class_results.csv",
+    "tables/final/small_object_results.csv"
+  ],
+  "figures": [
+    "figures/final/ablation_map_comparison.png",
+    "figures/final/accuracy_efficiency_tradeoff.png",
+    "figures/final/baseline_comparison.png",
+    "figures/final/class_distribution_modeling_set.png",
+    "figures/final/confusion_matrix.png",
+    "figures/final/country_performance.png",
+    "figures/final/false_negatives.png",
+    "figures/final/false_positives.png",
+    "figures/final/localization_errors.png",
+    "figures/final/missed_small_objects.png",
+    "figures/final/precision_recall_curves.png"
+  ],
+  "results": [
+    "results/final/CONFIDENCE_THRESHOLD_LOCKED.json",
+    "results/final/error_analysis_summary.json",
+    "results/final/final_comparison_table.json",
+    "results/final/final_run_manifest.json",
+    "results/final/final_test_results.json",
+    "results/final/model_selection_decision.md",
+    "results/final/package_manifest.json"
+  ],
+  "note": "Copied from Week 3\u20136 artifacts; values not recomputed or altered."
+}

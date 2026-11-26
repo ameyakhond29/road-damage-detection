@@ -1,0 +1,10 @@
+metric_name,split_label,original_value,reproduced_value,absolute_difference,relative_difference,pass_fail,explanation
+map50,Test,0.0,0.0,0.0,0.0,PASS,Within absolute tolerance
+map50_95,Test,0.0,0.0,0.0,0.0,PASS,Within absolute tolerance
+precision,Test,0.0,0.0,0.0,0.0,PASS,Within absolute tolerance
+recall,Test,0.0,0.0,0.0,0.0,PASS,Within absolute tolerance
+f1,Test,0.0,0.0,0.0,0.0,PASS,Within absolute tolerance
+ap50_D00,Test,0.0,0.0,0.0,0.0,PASS,Within absolute tolerance
+ap50_D10,Test,0.0,0.0,0.0,0.0,PASS,Within absolute tolerance
+ap50_D20,Test,0.0,0.0,0.0,0.0,PASS,Within absolute tolerance
+ap50_D40,Test,0.0,0.0,0.0,0.0,PASS,Within absolute tolerance

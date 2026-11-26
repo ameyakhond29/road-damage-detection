@@ -1,0 +1,30 @@
+{
+  "model": "yolov8n.pt",
+  "model_family": "YOLOv8n",
+  "imgsz": 640,
+  "batch": 16,
+  "epochs": 50,
+  "lr0": 0.01,
+  "optimizer": "auto (Ultralytics)",
+  "patience": 20,
+  "seed": 6845,
+  "amp": false,
+  "device": "mps",
+  "gpu_name": "Apple MPS",
+  "data": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/configs/rdd2022.yaml",
+  "software": {
+    "python": "3.11.1",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "torch": "2.14.1",
+    "cuda_available": false,
+    "ultralytics": "8.4.189"
+  },
+  "started_at": "2026-11-05T04:39:55.175792+00:00",
+  "smoke": false,
+  "checkpoint_selection": "best validation fitness / mAP50 (never test)",
+  "test_used_during_training": false,
+  "status": "not_started",
+  "metrics": "Not yet available.",
+  "training_time_sec": "Not yet available.",
+  "best_checkpoint": "Not yet available."
+}

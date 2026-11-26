@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "train": 241,
+    "val": 70,
+    "test": 50,
+    "n_groups": 10,
+    "n_duplicate_pairs": 53,
+    "n_duplicate_components": 53
+  },
+  "paths": {
+    "train": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/data/train_split.csv",
+    "val": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/data/val_split.csv",
+    "test": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/data/test_split.csv",
+    "duplicates": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/duplicate_report.csv"
+  },
+  "seed": 6845,
+  "block_size": 50
+}

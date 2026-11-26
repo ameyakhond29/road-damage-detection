@@ -1,0 +1,13 @@
+{
+  "split_label": "Test",
+  "split": "test",
+  "confidence_threshold": 0.25,
+  "n_images": 12,
+  "n_error_rows": 84,
+  "n_multi_damage_images": 4,
+  "n_pothole_fn": 1,
+  "notes": [
+    "Conf threshold locked from validation before this analysis.",
+    "Difficult lighting/weather/viewpoint labels are not in RDD2022 metadata; those categories remain qualitative / Pending without manual tags."
+  ]
+}

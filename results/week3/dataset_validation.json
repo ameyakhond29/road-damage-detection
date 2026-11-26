@@ -1,0 +1,25 @@
+{
+  "processed_dir": "data/processed/RDD2022_yolo",
+  "n_images": 361,
+  "n_label_files_scanned": 361,
+  "n_ok": 361,
+  "n_negatives": 120,
+  "n_boxes": 388,
+  "n_missing_labels": 0,
+  "n_orphan_labels": 0,
+  "n_bad_lines": 0,
+  "n_bad_class": 0,
+  "n_not_normalized": 0,
+  "n_nonpositive_wh": 0,
+  "n_out_of_bounds": 0,
+  "n_corrupt_images": 0,
+  "class_counts": {
+    "D00": 93,
+    "D10": 105,
+    "D20": 103,
+    "D40": 87
+  },
+  "negatives_preserved": true,
+  "every_image_has_label": true,
+  "passed": true
+}

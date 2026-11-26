@@ -1,0 +1,143 @@
+{
+  "model_id": "final_selected",
+  "checkpoint": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week5/yolo11n_640/seed_0/train/weights/best.pt",
+  "split_label": "Test",
+  "split": "test",
+  "imgsz": 640,
+  "seed": 0,
+  "confidence_threshold_operating": 0.25,
+  "conf_for_map": 0.001,
+  "iou_threshold": 0.7,
+  "conf_source": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week6/CONFIDENCE_THRESHOLD_LOCKED.json",
+  "device": "mps",
+  "gpu": "Apple MPS",
+  "software": {
+    "python": "3.11.1",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "torch": "2.15.0",
+    "cuda_available": false,
+    "ultralytics": "8.4.219"
+  },
+  "split_hashes": {
+    "train": "3b76a2dc76c7d169",
+    "val": "7cbd768db64f4036",
+    "test": "3fd321b755c91c23"
+  },
+  "week5_split_hashes": {
+    "train": "3b76a2dc76c7d169",
+    "val": "7cbd768db64f4036",
+    "test": "3fd321b755c91c23"
+  },
+  "split_hashes_match_week5": true,
+  "original_source": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week6/final_test_results.csv",
+  "n_fail": 0,
+  "degenerate_all_zero": true,
+  "abs_tol": 0.0001,
+  "rel_tol": 0.05,
+  "rows": [
+    {
+      "metric_name": "map50",
+      "split_label": "Test",
+      "original_value": "0.0",
+      "reproduced_value": 0.0,
+      "absolute_difference": 0.0,
+      "relative_difference": 0.0,
+      "pass_fail": "PASS",
+      "explanation": "Within absolute tolerance"
+    },
+    {
+      "metric_name": "map50_95",
+      "split_label": "Test",
+      "original_value": "0.0",
+      "reproduced_value": 0.0,
+      "absolute_difference": 0.0,
+      "relative_difference": 0.0,
+      "pass_fail": "PASS",
+      "explanation": "Within absolute tolerance"
+    },
+    {
+      "metric_name": "precision",
+      "split_label": "Test",
+      "original_value": "0.0",
+      "reproduced_value": 0.0,
+      "absolute_difference": 0.0,
+      "relative_difference": 0.0,
+      "pass_fail": "PASS",
+      "explanation": "Within absolute tolerance"
+    },
+    {
+      "metric_name": "recall",
+      "split_label": "Test",
+      "original_value": "0.0",
+      "reproduced_value": 0.0,
+      "absolute_difference": 0.0,
+      "relative_difference": 0.0,
+      "pass_fail": "PASS",
+      "explanation": "Within absolute tolerance"
+    },
+    {
+      "metric_name": "f1",
+      "split_label": "Test",
+      "original_value": "0.0",
+      "reproduced_value": 0.0,
+      "absolute_difference": 0.0,
+      "relative_difference": 0.0,
+      "pass_fail": "PASS",
+      "explanation": "Within absolute tolerance"
+    },
+    {
+      "metric_name": "ap50_D00",
+      "split_label": "Test",
+      "original_value": "0.0",
+      "reproduced_value": 0.0,
+      "absolute_difference": 0.0,
+      "relative_difference": 0.0,
+      "pass_fail": "PASS",
+      "explanation": "Within absolute tolerance"
+    },
+    {
+      "metric_name": "ap50_D10",
+      "split_label": "Test",
+      "original_value": "0.0",
+      "reproduced_value": 0.0,
+      "absolute_difference": 0.0,
+      "relative_difference": 0.0,
+      "pass_fail": "PASS",
+      "explanation": "Within absolute tolerance"
+    },
+    {
+      "metric_name": "ap50_D20",
+      "split_label": "Test",
+      "original_value": "0.0",
+      "reproduced_value": 0.0,
+      "absolute_difference": 0.0,
+      "relative_difference": 0.0,
+      "pass_fail": "PASS",
+      "explanation": "Within absolute tolerance"
+    },
+    {
+      "metric_name": "ap50_D40",
+      "split_label": "Test",
+      "original_value": "0.0",
+      "reproduced_value": 0.0,
+      "absolute_difference": 0.0,
+      "relative_difference": 0.0,
+      "pass_fail": "PASS",
+      "explanation": "Within absolute tolerance"
+    }
+  ],
+  "reproduced_raw": {
+    "map50": 0.0,
+    "map50_95": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "ap50_D00": 0.0,
+    "ap50_D10": 0.0,
+    "ap50_D20": 0.0,
+    "ap50_D40": 0.0
+  },
+  "timestamp": "2026-11-26T03:05:35.134410+00:00",
+  "test_used_for_selection": false,
+  "note": "Evaluation-only reproduction of frozen checkpoint; no retraining."
+}

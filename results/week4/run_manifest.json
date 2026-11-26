@@ -1,0 +1,63 @@
+{
+  "week": 4,
+  "project": "Road Damage Detection Using Lightweight Object Detectors",
+  "started_at": "2026-11-05T18:46:24.650995+00:00",
+  "ended_at": "2026-11-05T18:48:38.754986+00:00",
+  "smoke": true,
+  "seed": 6845,
+  "git_commit": null,
+  "repository_root": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "hardware": {
+    "machine": "arm64",
+    "processor": "arm",
+    "software": {
+      "python": "3.11.1",
+      "platform": "macOS-27.0.1-arm64-arm-64bit",
+      "torch": "2.14.1",
+      "cuda_available": false,
+      "ultralytics": "8.4.189"
+    }
+  },
+  "dataset_split": {
+    "split_id": "grouped_70_15_15_seed6845",
+    "files": {
+      "train": "data/splits/train.csv",
+      "val": "data/splits/val.csv",
+      "test": "data/splits/test.csv"
+    },
+    "sha256": {
+      "train.csv": "3b76a2dc76c7d169ac780d77a99fecc38b4f682347f01167992c49c7a63e6666",
+      "val.csv": "7cbd768db64f4036e9f27dfbc87ae750c5ae502b46aaea6361fd62c2e1b9287b",
+      "test.csv": "3fd321b755c91c23a1e780936b55fa3dc0ca15372e6fc54a44eace4bbd95fdc9",
+      "split_summary.json": "137b8b3ce5b463d34ef41b9d6a82cf593d4826040bb611d4e65fe06055dd71f5"
+    },
+    "unchanged_from_week3": true
+  },
+  "configs": {
+    "data": "configs/rdd2022.yaml",
+    "baseline_yolov8n": "configs/baseline_yolov8n.yaml",
+    "baseline_yolo11n": "configs/baseline_yolo11n.yaml"
+  },
+  "models": {
+    "reference": "yolov8n.pt",
+    "strong": "yolo11n.pt"
+  },
+  "commands_executed": [
+    "python scripts/train_yolo11_baseline.py --data configs/rdd2022.yaml --seed 6845 --smoke",
+    "python scripts/compare_baselines.py --seed 6845",
+    "python scripts/evaluate_week4.py --seed 6845"
+  ],
+  "outputs": {
+    "yolo11n_baseline": "results/week4/yolo11n_baseline/",
+    "baseline_comparison_csv": "results/week4/baseline_comparison.csv",
+    "baseline_comparison_json": "results/week4/baseline_comparison.json",
+    "evaluation": "results/week4/evaluation/",
+    "figures": "figures/week4/",
+    "progress_report": "docs/week4_progress_report.md"
+  },
+  "protocol": {
+    "checkpoint_selection": "validation only",
+    "test_used_for_selection": false
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "seed": 6845,
+  "block_size": 50,
+  "train_ratio": 0.7,
+  "val_ratio": 0.15,
+  "test_ratio": 0.15,
+  "splits": {
+    "train": {
+      "n_images": 252,
+      "n_boxes": 275,
+      "n_negatives": 81,
+      "pct_negatives": 32.14,
+      "per_class_boxes": {
+        "D00": 65,
+        "D10": 81,
+        "D20": 67,
+        "D40": 62
+      },
+      "country_distribution": {
+        "China_MotorBike": 50,
+        "Czech": 60,
+        "India": 60,
+        "Japan": 61,
+        "Norway": 11,
+        "United_States": 10
+      }
+    },
+    "val": {
+      "n_images": 59,
+      "n_boxes": 58,
+      "n_negatives": 23,
+      "pct_negatives": 38.98,
+      "per_class_boxes": {
+        "D00": 12,
+        "D10": 11,
+        "D20": 19,
+        "D40": 16
+      },
+      "country_distribution": {
+        "China_MotorBike": 10,
+        "Norway": 49
+      }
+    },
+    "test": {
+      "n_images": 50,
+      "n_boxes": 55,
+      "n_negatives": 16,
+      "pct_negatives": 32.0,
+      "per_class_boxes": {
+        "D00": 16,
+        "D10": 13,
+        "D20": 17,
+        "D40": 9
+      },
+      "country_distribution": {
+        "United_States": 50
+      }
+    }
+  },
+  "duplicate_leakage": {
+    "n_duplicate_pairs": 53,
+    "n_pairs_crossing_splits": 0,
+    "passed": true
+  },
+  "legacy_paths": {
+    "train": "data/train_split.csv",
+    "val": "data/val_split.csv",
+    "test": "data/test_split.csv",
+    "duplicates": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/duplicate_report.csv"
+  },
+  "materialized": {
+    "train": 252,
+    "val": 59,
+    "test": 50
+  }
+}

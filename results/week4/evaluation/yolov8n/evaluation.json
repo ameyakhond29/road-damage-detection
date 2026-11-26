@@ -1,0 +1,294 @@
+{
+  "validation": {
+    "split": "val",
+    "metrics": {
+      "metrics/precision(B)": 0.00014334862385321102,
+      "metrics/recall(B)": 0.022727272727272728,
+      "metrics/mAP50(B)": 8.731617647058824e-05,
+      "metrics/mAP50-95(B)": 2.6194852941176473e-05,
+      "fitness": 2.6194852941176473e-05
+    },
+    "per_class": {
+      "D00": {
+        "AP50": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "D10": {
+        "AP50": 0.00034926470588235296,
+        "precision": 0.0005733944954128441,
+        "recall": 0.09090909090909091
+      },
+      "D20": {
+        "AP50": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "D40": {
+        "AP50": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      }
+    },
+    "save_dir": "/Users/ameyakhond/Desktop/runs/detect/val-3"
+  },
+  "test": {
+    "split": "test",
+    "metrics": {
+      "metrics/precision(B)": 4.0456347600938586e-05,
+      "metrics/recall(B)": 0.029411764705882353,
+      "metrics/mAP50(B)": 8.347851335656214e-06,
+      "metrics/mAP50-95(B)": 2.1410020647825528e-06,
+      "fitness": 2.1410020647825528e-06
+    },
+    "per_class": {
+      "D00": {
+        "AP50": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "D10": {
+        "AP50": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      },
+      "D20": {
+        "AP50": 3.3391405342624855e-05,
+        "precision": 0.00016182539040375434,
+        "recall": 0.11764705882352941
+      },
+      "D40": {
+        "AP50": 0.0,
+        "precision": 0.0,
+        "recall": 0.0
+      }
+    },
+    "save_dir": "/Users/ameyakhond/Desktop/runs/detect/val-4"
+  },
+  "small_object": {
+    "val": {
+      "status": "ok",
+      "split": "val",
+      "area_threshold": 0.02,
+      "n_small_gt_boxes": 51,
+      "n_small_detected_iou50": 0,
+      "small_recall": 0.0,
+      "per_class": {
+        "D00": {
+          "n": 10,
+          "hit": 0,
+          "recall": 0.0
+        },
+        "D10": {
+          "n": 11,
+          "hit": 0,
+          "recall": 0.0
+        },
+        "D20": {
+          "n": 18,
+          "hit": 0,
+          "recall": 0.0
+        },
+        "D40": {
+          "n": 12,
+          "hit": 0,
+          "recall": 0.0
+        }
+      }
+    },
+    "test": {
+      "status": "ok",
+      "split": "test",
+      "area_threshold": 0.02,
+      "n_small_gt_boxes": 47,
+      "n_small_detected_iou50": 0,
+      "small_recall": 0.0,
+      "per_class": {
+        "D00": {
+          "n": 15,
+          "hit": 0,
+          "recall": 0.0
+        },
+        "D10": {
+          "n": 13,
+          "hit": 0,
+          "recall": 0.0
+        },
+        "D20": {
+          "n": 11,
+          "hit": 0,
+          "recall": 0.0
+        },
+        "D40": {
+          "n": 8,
+          "hit": 0,
+          "recall": 0.0
+        }
+      }
+    }
+  },
+  "confidence_sweep_val": [
+    {
+      "split": "val",
+      "conf": 0.05,
+      "mAP50": 0.0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    {
+      "split": "val",
+      "conf": 0.1,
+      "mAP50": 0.0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    {
+      "split": "val",
+      "conf": 0.25,
+      "mAP50": 0.0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    {
+      "split": "val",
+      "conf": 0.4,
+      "mAP50": 0.0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    {
+      "split": "val",
+      "conf": 0.5,
+      "mAP50": 0.0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    {
+      "split": "val",
+      "conf": 0.65,
+      "mAP50": 0.0,
+      "precision": 0.0,
+      "recall": 0.0
+    }
+  ],
+  "prediction_gallery": {
+    "n_saved": 12,
+    "examples": [
+      {
+        "file": "test_00_fn_candidate_United_States__United_States_00015.jpg",
+        "image": "United_States__United_States_00015.jpg",
+        "n_gt": 1,
+        "n_pred": 0,
+        "tag": "fn_candidate"
+      },
+      {
+        "file": "test_01_fn_candidate_United_States__United_States_00042.jpg",
+        "image": "United_States__United_States_00042.jpg",
+        "n_gt": 1,
+        "n_pred": 0,
+        "tag": "fn_candidate"
+      },
+      {
+        "file": "test_02_fn_candidate_United_States__United_States_00037.jpg",
+        "image": "United_States__United_States_00037.jpg",
+        "n_gt": 2,
+        "n_pred": 0,
+        "tag": "fn_candidate"
+      },
+      {
+        "file": "test_03_fn_candidate_United_States__United_States_00022.jpg",
+        "image": "United_States__United_States_00022.jpg",
+        "n_gt": 1,
+        "n_pred": 0,
+        "tag": "fn_candidate"
+      },
+      {
+        "file": "test_04_fn_candidate_United_States__United_States_00038.jpg",
+        "image": "United_States__United_States_00038.jpg",
+        "n_gt": 1,
+        "n_pred": 0,
+        "tag": "fn_candidate"
+      },
+      {
+        "file": "test_05_fn_candidate_United_States__United_States_00013.jpg",
+        "image": "United_States__United_States_00013.jpg",
+        "n_gt": 1,
+        "n_pred": 0,
+        "tag": "fn_candidate"
+      },
+      {
+        "file": "test_06_fn_candidate_United_States__United_States_00031.jpg",
+        "image": "United_States__United_States_00031.jpg",
+        "n_gt": 1,
+        "n_pred": 0,
+        "tag": "fn_candidate"
+      },
+      {
+        "file": "test_07_fn_candidate_United_States__United_States_00003.jpg",
+        "image": "United_States__United_States_00003.jpg",
+        "n_gt": 1,
+        "n_pred": 0,
+        "tag": "fn_candidate"
+      },
+      {
+        "file": "test_08_fn_candidate_United_States__United_States_00017.jpg",
+        "image": "United_States__United_States_00017.jpg",
+        "n_gt": 2,
+        "n_pred": 0,
+        "tag": "fn_candidate"
+      },
+      {
+        "file": "test_09_fn_candidate_United_States__United_States_00027.jpg",
+        "image": "United_States__United_States_00027.jpg",
+        "n_gt": 1,
+        "n_pred": 0,
+        "tag": "fn_candidate"
+      },
+      {
+        "file": "test_10_fn_candidate_United_States__United_States_00030.jpg",
+        "image": "United_States__United_States_00030.jpg",
+        "n_gt": 3,
+        "n_pred": 0,
+        "tag": "fn_candidate"
+      },
+      {
+        "file": "test_11_fn_candidate_United_States__United_States_00028.jpg",
+        "image": "United_States__United_States_00028.jpg",
+        "n_gt": 1,
+        "n_pred": 0,
+        "tag": "fn_candidate"
+      }
+    ],
+    "dir": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/figures/week4/predictions/yolov8n"
+  },
+  "country_analysis": {
+    "val": {
+      "status": "ok",
+      "per_country": {
+        "China_MotorBike": {
+          "n_images": 10,
+          "n_gt_boxes": 10,
+          "n_detected_iou50": 0,
+          "box_recall": 0.0
+        },
+        "Norway": {
+          "n_images": 49,
+          "n_gt_boxes": 48,
+          "n_detected_iou50": 0,
+          "box_recall": 0.0
+        }
+      }
+    },
+    "test": {
+      "status": "ok",
+      "per_country": {
+        "United_States": {
+          "n_images": 50,
+          "n_gt_boxes": 55,
+          "n_detected_iou50": 0,
+          "box_recall": 0.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "models": [
+    {
+      "model": "YOLOv8n",
+      "checkpoint": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week3/yolov8n_baseline/train/weights/best.pt",
+      "seed": 6845,
+      "imgsz": 640,
+      "epochs": 3,
+      "batch": 4,
+      "smoke": true,
+      "mAP50": 8.731617647058824e-05,
+      "mAP50_95": 2.6194852941176473e-05,
+      "precision": 0.00014334862385321102,
+      "recall": 0.022727272727272728,
+      "f1": 0.000285,
+      "n_parameters": 3138732,
+      "gflops": "Pending",
+      "latency_ms": 17.745,
+      "throughput_img_s": 56.353,
+      "checkpoint_size_mb": 6.202,
+      "training_time_sec": 66.1,
+      "peak_gpu_memory_mb": "Pending",
+      "gpu_name": "Apple MPS",
+      "split_id": "grouped_70_15_15_seed6845",
+      "selection_split": "val",
+      "test_used_for_selection": false,
+      "source_metrics_file": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week3/yolov8n_baseline/metrics.json"
+    },
+    {
+      "model": "YOLO11n",
+      "checkpoint": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week4/yolo11n_baseline/train/weights/best.pt",
+      "seed": 6845,
+      "imgsz": 640,
+      "epochs": 3,
+      "batch": 4,
+      "smoke": true,
+      "mAP50": 0.0,
+      "mAP50_95": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": "Pending",
+      "n_parameters": 2605612,
+      "gflops": "Pending",
+      "latency_ms": 19.238,
+      "throughput_img_s": 51.98,
+      "checkpoint_size_mb": 5.249,
+      "training_time_sec": 83.71,
+      "peak_gpu_memory_mb": "Pending",
+      "gpu_name": "Apple MPS",
+      "split_id": "grouped_70_15_15_seed6845",
+      "selection_split": "val",
+      "test_used_for_selection": false,
+      "source_metrics_file": "/Users/ameyakhond/Desktop/DATA 255/Project/road-damage-detection/results/week4/yolo11n_baseline/metrics.json"
+    }
+  ],
+  "conclusion": "Under this run, YOLOv8n mAP@0.5 (8.73162e-05) is higher than YOLO11n (0). Do not claim YOLO11n is better.",
+  "notes": [
+    "Metrics loaded from saved run JSON files only.",
+    "Validation metrics are used for comparison of selected checkpoints.",
+    "Test-set numbers belong in evaluate_week4.py outputs, not selection.",
+    "Do not claim superiority unless conclusion and numbers agree."
+  ],
+  "class_names": [
+    "D00",
+    "D10",
+    "D20",
+    "D40"
+  ]
+}

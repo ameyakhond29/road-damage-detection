@@ -1,0 +1,15 @@
+{
+  "command": "python scripts/train_week5_ablation.py --experiment yolo11n_p2_640 --seed 0 --smoke --epochs 1 --workers 0",
+  "argv": [
+    "scripts/train_week5_ablation.py",
+    "--experiment",
+    "yolo11n_p2_640",
+    "--seed",
+    "0",
+    "--smoke",
+    "--epochs",
+    "1",
+    "--workers",
+    "0"
+  ]
+}
