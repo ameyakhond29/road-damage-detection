@@ -1,0 +1,61 @@
+# Team investigation — YOLO11n + lightweight neck-attention block, 640 px
+# Role: Experiment 3 (H1 comparison vs P2)
+# Intended major factor: architecture (attention block only)
+# Held constant vs strong baseline: data, epochs, optimizer, imgsz=640,
+#   batch policy, augmentation, conf/NMS, checkpoint rule
+# Do NOT use test split for selection.
+
+experiment_role: team_investigation
+variant: attention
+model: configs/models/yolo11n_attention.yaml
+pretrained_weights: yolo11n.pt
+imgsz: 640
+batch: 16
+epochs: 100
+patience: 30
+seed: 0
+data: configs/rdd2022.yaml
+pretrained: true
+optimizer: auto
+lr0: 0.01
+lrf: 0.01
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3.0
+cos_lr: false
+hsv_h: 0.015
+hsv_s: 0.7
+hsv_v: 0.4
+degrees: 0.0
+translate: 0.1
+scale: 0.5
+shear: 0.0
+perspective: 0.0
+flipud: 0.0
+fliplr: 0.5
+mosaic: 1.0
+mixup: 0.0
+copy_paste: 0.0
+conf: 0.001
+iou: 0.7
+max_det: 300
+amp: true
+workers: 8
+project: results/experiments
+name: variant_attention
+class_mapping:
+  D00: 0
+  D10: 1
+  D20: 2
+  D40: 3
+primary_metric: metrics/mAP50(B)
+checkpoint_selection: best_val_mAP50
+architecture:
+  description: >
+    Insert a lightweight channel/spatial attention block (e.g. CBAM-style or
+    a single SE/attention module) in the neck before the detection heads.
+    Keep parameter budget comparable to the P2 variant when possible.
+  location: neck
+  expected_cost: modest parameter and GFLOPs increase vs YOLO11n
+notes: >
+  Single-factor change vs baseline_yolo11n.yaml: attention block only.

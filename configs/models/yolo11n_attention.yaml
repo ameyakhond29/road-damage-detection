@@ -1,0 +1,8 @@
+# Implemented Week 5 — see yolo11n-attn.yaml
+placeholder: false
+implemented_as: configs/models/yolo11n-attn.yaml
+base: yolo11.yaml
+modification: lightweight_c2psa_neck_p3
+nc: 4
+notes: >
+  Real architecture lives in yolo11n-attn.yaml (C2PSA on P3 neck feature).

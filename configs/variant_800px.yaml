@@ -1,0 +1,55 @@
+# Team investigation — YOLO11n at 800-pixel input
+# Role: Experiment 4 (resolution vs architecture trade-off)
+# Intended major factor: image size (800 vs 640)
+# Held constant vs strong baseline: architecture (plain YOLO11n), data,
+#   epochs, optimizer, augmentation, conf/NMS, checkpoint rule
+# Batch may drop under the fit_gpu_memory policy; record actual batch used.
+# Do NOT use test split for selection.
+
+experiment_role: team_investigation
+variant: imgsz_800
+model: yolo11n.pt
+imgsz: 800
+batch: 8                         # default under batch policy for 800 px; adjust to fit GPU
+epochs: 100
+patience: 30
+seed: 0
+data: configs/rdd2022.yaml
+pretrained: true
+optimizer: auto
+lr0: 0.01
+lrf: 0.01
+momentum: 0.937
+weight_decay: 0.0005
+warmup_epochs: 3.0
+cos_lr: false
+hsv_h: 0.015
+hsv_s: 0.7
+hsv_v: 0.4
+degrees: 0.0
+translate: 0.1
+scale: 0.5
+shear: 0.0
+perspective: 0.0
+flipud: 0.0
+fliplr: 0.5
+mosaic: 1.0
+mixup: 0.0
+copy_paste: 0.0
+conf: 0.001
+iou: 0.7
+max_det: 300
+amp: true
+workers: 8
+project: results/experiments
+name: variant_800px
+class_mapping:
+  D00: 0
+  D10: 1
+  D20: 2
+  D40: 3
+primary_metric: metrics/mAP50(B)
+checkpoint_selection: best_val_mAP50
+notes: >
+  Single-factor change vs baseline_yolo11n.yaml: imgsz 640 → 800.
+  Expect higher GFLOPs/latency; measure accuracy per added compute.

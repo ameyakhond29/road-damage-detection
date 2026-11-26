@@ -1,0 +1,31 @@
+# LEGACY: `path` points at the synthetic fixture (data/processed/RDD2022_yolo).
+# Not yet ported to the official RDD2022 layout (data/processed/images/<country>).
+#
+# Country-held-out dataset config (generalization experiment).
+# Train/val: Japan, India, Czech, China_MotorBike (from fixed Week 1 splits).
+# test: source-country test only (optional ID reporting — NOT for selection).
+# Held-out eval list is written separately: data/ood/heldout_eval.csv
+# and must never be used for checkpoint selection.
+#
+# After running scripts/06_prepare_ood_splits.py and regenerating YOLO list
+# files under data/processed/.../splits_ood/, update `path` like rdd2022.yaml.
+
+path: data/processed/RDD2022_yolo
+train: splits_ood/train.txt
+val: splits_ood/val.txt
+test: splits_ood/test.txt
+nc: 4
+names:
+  0: D00
+  1: D10
+  2: D20
+  3: D40
+class_ids:
+  D00: 0
+  D10: 1
+  D20: 2
+  D40: 3
+heldout_eval_csv: data/ood/heldout_eval.csv
+notes: >
+  Country-held-out experiment. Select checkpoints on val (source countries).
+  Report held-out metrics on Norway + United_States separately.

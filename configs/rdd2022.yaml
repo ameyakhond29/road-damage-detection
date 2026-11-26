@@ -1,0 +1,55 @@
+# Official RDD2022 dataset configuration (tracked; portable — no machine paths).
+#
+# All paths are relative to the repository root. The raw root can be overridden with
+# the RDD2022_ROOT environment variable or --data-root on the command line.
+# Ultralytics needs an absolute `path`, so training scripts generate a per-machine
+# runtime YAML at `ultralytics_yaml` (gitignored) from the split CSVs below.
+#
+# Classes: D00=0, D10=1, D20=2, D40=3. Checkpoint selection uses val only — never test.
+# The synthetic fixture is NOT referenced here; it is selected only via --dataset fixture.
+
+dataset: official_rdd2022
+dataset_version: RDD2022_released_through_CRDDC2022
+source: https://github.com/sekilab/RoadDamageDetector
+source_archive: https://bigdatacup.s3.ap-northeast-1.amazonaws.com/2022/CRDDC2022/RDD2022/RDD2022.zip
+source_mirror: https://ndownloader.figshare.com/files/38030910
+
+root_env: RDD2022_ROOT
+raw_root: data/raw/RDD2022
+processed_root: data/processed
+splits_dir: data/splits
+results_dir: results/official_rdd2022
+ultralytics_yaml: data/processed/ultralytics/rdd2022_official.yaml
+
+train: data/splits/train.csv
+val: data/splits/val.csv
+test: data/splits/test.csv
+
+nc: 4
+names:
+  0: D00
+  1: D10
+  2: D20
+  3: D40
+class_ids:
+  D00: 0
+  D10: 1
+  D20: 2
+  D40: 3
+class_descriptions:
+  D00: longitudinal crack
+  D10: transverse crack
+  D20: alligator crack
+  D40: pothole
+
+excluded_folders:
+  - China_Drone
+use_official_test_images: false   # official test/ images are unlabeled — never used
+split_seed: 6845
+split_id: grouped_70_15_15_seed6845
+split_ratios: [0.70, 0.15, 0.15]
+group_block_size: 50
+near_duplicate_max_hamming: 0     # pHash (8x8) distance merged transitively into one group
+near_duplicate_purge_hamming: 4   # val/test image with a pHash<=4 neighbour in another split is dropped
+imgsz: 640
+checkpoint_selection: best_val_mAP50

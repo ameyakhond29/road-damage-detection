@@ -1,0 +1,106 @@
+protocol_id: week6_final_v1
+protocol_frozen: true
+freeze_date_utc: '2026-11-06'
+test_evaluation_completed: true
+final_model:
+  experiment: yolo11n_640
+  display_name: YOLO11n @ 640 (Week 5 selected / control)
+  architecture: stock YOLO11n Detect(P3, P4, P5)
+  checkpoint: results/week5/yolo11n_640/seed_0/train/weights/best.pt
+  selection_source: results/week5/model_selection_decision.md
+  selection_metric: mean_val_mAP50
+  test_used_for_selection: false
+  input_resolution: 640
+  train_batch_size_nominal: 16
+  seed: 0
+  notes: 'Provisional under Week 5 smoke caveat (near-zero val mAP). No ablation beat
+    the YOLO11n@640 control on available validation metrics. Seeds 1/2 Pending.
+
+    '
+baselines:
+  yolov8n:
+    display_name: YOLOv8n Week 3 baseline
+    checkpoint: results/week3/yolov8n_baseline/train/weights/best.pt
+    input_resolution: 640
+    seed: 6845
+  yolo11n_week4:
+    display_name: YOLO11n Week 4 strong baseline
+    checkpoint: results/week4/yolo11n_baseline/train/weights/best.pt
+    input_resolution: 640
+    seed: 6845
+week5_best_ablation:
+  experiment: yolo11n_640
+  display_name: Best Week 5 ablation (= YOLO11n@640 control)
+  checkpoint: results/week5/yolo11n_640/seed_0/train/weights/best.pt
+  identical_to_final: true
+data: configs/rdd2022.yaml
+split_id: grouped_70_15_15_seed6845
+split_files:
+  train: data/splits/train.csv
+  val: data/splits/val.csv
+  test: data/splits/test.csv
+class_mapping:
+  D00: 0
+  D10: 1
+  D20: 2
+  D40: 3
+nc: 4
+names:
+- D00
+- D10
+- D20
+- D40
+imgsz: 640
+iou_threshold: 0.7
+max_det: 300
+conf_for_map: 0.001
+confidence_threshold: 0.25
+conf_selection:
+  split: val
+  candidates:
+  - 0.05
+  - 0.1
+  - 0.25
+  - 0.4
+  - 0.5
+  - 0.65
+  criterion: max_f1_then_precision
+  status: selected_on_validation
+  selected_conf: 0.25
+metrics:
+- mAP50
+- mAP50-95
+- precision
+- recall
+- f1
+- per_class_ap
+- per_class_precision_recall
+- small_object_ap
+- fp_fn_counts
+- latency
+- gflops
+- parameters
+small_object_area_threshold: 0.02
+localization_iou_poor: 0.5
+comparison_seeds:
+- 0
+- 1
+- 2
+available_seeds_note: 'Final model currently has seed 0 only (Week 5 smoke). Seeds
+  1/2 marked Pending. Week 3/4 baselines used seed 6845.
+
+  '
+country_analysis:
+  create_new_split: false
+  note: "Main test split is 100% United_States by construction of the grouped split\
+    \ \u2014 not a designed country-held-out OOD protocol. Per-country metrics are\
+    \ reported for Validation (China_MotorBike, Norway) and Test (United_States) separately.\
+    \ No new split is created.\n"
+hardware_target: NVIDIA T4
+hardware_actual: Pending
+rules:
+- Select checkpoint and confidence on validation only
+- Run held-out test evaluation exactly once per model after freeze
+- Do not retune after viewing test results
+- Label every metric Validation / Test / Country-held-out
+- Do not fabricate metrics; mark unfinished as Pending

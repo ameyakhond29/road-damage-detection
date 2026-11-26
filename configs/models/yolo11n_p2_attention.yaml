@@ -1,0 +1,9 @@
+# Implemented Week 5 — see yolo11n-p2-attn.yaml
+placeholder: false
+implemented_as: configs/models/yolo11n-p2-attn.yaml
+base: yolo11.yaml
+modification: p2_head_plus_c2psa_on_p2
+nc: 4
+detection_strides: [4, 8, 16, 32]
+notes: >
+  Real architecture lives in yolo11n-p2-attn.yaml (P2 Detect + C2PSA on P2).

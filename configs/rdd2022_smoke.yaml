@@ -1,0 +1,20 @@
+# LEGACY synthetic-fixture smoke subset (Week 1) — not RDD2022, not for experiments.
+# scripts/05_smoke_test.py now regenerates its runtime copy (absolute path) at
+# data/processed/RDD2022_yolo/rdd2022_smoke.yaml. Official-data smoke test:
+# scripts/smoke_test_official_rdd2022.py (results/official_rdd2022/smoke_test/).
+dataset: fixture
+path: data/processed/RDD2022_yolo
+train: smoke/train.txt
+val: smoke/val.txt
+test: smoke/val.txt
+nc: 4
+names:
+  0: D00
+  1: D10
+  2: D20
+  3: D40
+class_ids:
+  D00: 0
+  D10: 1
+  D20: 2
+  D40: 3

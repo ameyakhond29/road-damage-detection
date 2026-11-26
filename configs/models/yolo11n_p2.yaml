@@ -1,0 +1,13 @@
+# Implemented Week 5 — see yolo11n-p2.yaml (Ultralytics-loadable YAML).
+# Kept for Week 2 checker / variant_p2.yaml path compatibility.
+# Prefer: configs/models/yolo11n-p2.yaml
+
+placeholder: false
+implemented_as: configs/models/yolo11n-p2.yaml
+base: yolo11.yaml
+modification: p2_stride4_head
+nc: 4
+detection_strides: [4, 8, 16, 32]
+notes: >
+  Real architecture lives in yolo11n-p2.yaml (C3k2/C2PSA backbone + P2 Detect).
+  Training scripts resolve this stub to that file.
