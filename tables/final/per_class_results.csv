@@ -1,0 +1,5 @@
+model_id,display_name,val_ap50_D00,val_ap50_D10,val_ap50_D20,val_ap50_D40,test_ap50_D00,test_ap50_D10,test_ap50_D20,test_ap50_D40
+yolov8n,YOLOv8n Week 3 baseline,0.0,0.00034926470588235296,0.0,0.0,0.0,0.0,3.3391405342624855e-05,0.0
+yolo11n_week4,YOLO11n Week 4 strong baseline,0.0,0.0,0.0,0.0,4.519224083988041e-06,0.0,0.0,0.0
+week5_best_ablation,Best Week 5 ablation (= YOLO11n@640 control),0.0,9.550618276867397e-06,0.0,2.2863172704889202e-05,0.0,0.0,0.0,0.0
+final_selected,YOLO11n @ 640 (Week 5 selected / control),0.0,9.550618276867397e-06,0.0,2.2863172704889202e-05,0.0,0.0,0.0,0.0

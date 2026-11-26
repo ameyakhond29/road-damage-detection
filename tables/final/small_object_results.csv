@@ -1,0 +1,5 @@
+model_id,display_name,val_small_object_ap,test_small_object_ap
+yolov8n,YOLOv8n Week 3 baseline,0.00012566137566137565,0.0
+yolo11n_week4,YOLO11n Week 4 strong baseline,0.0,1.8324312133513758e-06
+week5_best_ablation,Best Week 5 ablation (= YOLO11n@640 control),4.216974431818182e-06,0.0
+final_selected,YOLO11n @ 640 (Week 5 selected / control),4.216974431818182e-06,0.0
